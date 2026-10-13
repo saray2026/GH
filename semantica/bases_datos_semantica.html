@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="inicio">
+        <h1>Introduccion a las Bases de Datos</h1>
+        <nav>
+            <ul>
+                <li><a href="#CyT">Concepto y Tipos</a></li>
+                <li><a href="#EdD">Estructura de Datos</a></li>
+                <li><a href="#R">Relaciones</a></li>
+                <li><a href="#RdI">Recursos de Interes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="CyT">Concepto y Tipos de Bases de Datos</h2>
+            <article>
+                <h3>Bases de Datos Relacionales (RDBMS)</h3>
+                <p>Una base de datos relacional es una coleccion de informacion perteneciente a un mismo contenido o problema que organiza la informacion de manera clara en ficheros.
+                    Para ello, usa tablas con filas y columnas para tener una clara organizacion de esa informacion. Entre todos sus ejemplos, se encuentra MySQL o PostgreSQL</p>
+            </article>
+            <article>
+                <h3>Bases de Datos No Relacionales (NoSQL)</h3>
+                <p>Las bases de datos NoSQL guardan datos no estructurados o semiestructurados, como documentos, clave‑valor o grafos, ofreciendo gran flexibilidad. 
+                    Ejemplos comunes: MongoDB, Redis, Cassandra.</p>
+            </article>
+        </section>
+        <section>
+            <h2 id="EdD">Estructura de una Base de Datos Relacional</h2>
+            <article>
+                <ul>
+                    <li><b>Tablas (Entidades):</b>Estructuras donde se organizan los datos</li>
+                    <li><b>Campos (Atributos):</b>Columnas que definen la tipologia de la informacion</li>
+                    <li><b>Registros (Tuplas):</b>Filas que contienen cada instancia concreta de datos</li>
+                    <li><b>Claves primarias (Primary Keys):</b>Identificadores unicos de cada registro</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2 id="R">Relaciones entre Tablas</h2>
+            <article>
+                <ul>
+                    <li>
+                        Relacion 1:1 (Uno a uno): 
+                        Un registro se relaciona con solo uno en otra tabla.
+                    </li>
+                    <li>
+                        Relacion 1:N (Uno a muchos):
+                        Un registro se relaciona con muchos en otra tabla.
+                    </li>
+                    <li>
+                        Relacion N:M (muchos a muchos):
+                        Muchos registros se relacionan con muchos en otra tabla, usando una tabla intermedia.
+                    </li>
+                </ul>
+                <p>
+                    Clave Foránea (Foreign Key): Es un campo que conecta dos tablas, obligando a que el valor exista en la tabla relacionada.
+                    Garantiza que las relaciones anteriores (1:1, 1:N, N:M) sean coherentes y evita datos que no tengan correspondencia.
+                </p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h3>Glosario de terminos</h3>
+        <ul>
+            <li><b>SQL:</b>Lenguaje estándar para definir, consultar y manipular datos en bases de datos relacionales.
+                Incluye sublenguajes como DDL (definición), DML (manipulación), DCL (control de permisos) y TCL (transacciones).
+            </li>
+            <li><b>SGBD:</b>Software que almacena, organiza y gestiona bases de datos. Controla la integridad, la concurrencia, las transacciones, el acceso de usuarios y las copias de seguridad.
+                Ejemplos: MySQL, PostgreSQL, SQL Server, Oracle.
+            </li>
+            <li><b>Normalizacion:</b>Proceso de organizar tablas y atributos para reducir redundancia, evitar inconsistencias y mejorar la integridad de los datos.
+                Se basa en reglas llamadas formas normales (1FN, 2FN, 3FN, etc.).
+            </li>
+        </ul>
+        <h3>Enlaces recomendados</h3>
+        <ul>
+            <li><a href="https://www.ibm.com/es-es/think/topics/structured-query-language">Informacion sobre SQL</a></li>
+            <li><a href="https://www.ovhcloud.com/es-es/learn/what-is-dbms/">Informacion sobre SGBD</a></li>
+            <li><a href="https://openwebinars.net/blog/como-realizar-la-normalizacion-de-bases-de-datos-y-por-que/"></a>Aprende a realizar normalizacion en base de datos</li>
+        </ul>
+    </aside>
+    <footer>
+        <p><b>Autor:</b> Saray Marín Guillén - <b>Curso: 1ºASIR</b></p>
+        <p>© 2025 Saray Marin. Todos los derechos reservados.</p>
+        <p><a href="#inicio">Volver a inicio</a></p>
+    </footer>
+</body>
+</html>
