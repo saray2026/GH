@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Técnico</title>
+</head>
+<body>
+    <header id="inicio">
+        <h1>TechOps & SysAdmin Blog</h1>
+        <p>En este blog técnico descubrirás el día a día sobre las incidencias y buenas prácticas del departamento del sistemas e infraestructura IT</p>
+        <nav>
+            <ul>
+                <li><a href="#PSO">Parche del sistema operativo</a></li>
+                <li><a href="#MN">Migración de la nube</a></li>
+                <li><a href="#CS">Copias de seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 id="PSO">Artículo sobre una actualización crítica de seguridad o parche del sistema operativo</h2>
+            <p>Ana Higuera. 27/10/2026</p>
+            <section>
+                <h3>Microsoft lanza un parche urgente para aplicaicones y servidores: qué corrige el fallo de Brotli</h3>
+                <p>Microsoft ha publicado una actualización de seguridad fuera de banda (OBB, por sus siglas) para .NET 8, .NET 9 y .NET 10, así como para la tercera versión candidata de .NET 11. Acorde a la información compartida por la compañía, el parche está distribuido fuera del calendario habitual de actualizaciones y corrige varias vulnerabilidades que pueden comprometer la seguridad de las aplicaciones y los sistemas que utilizan estas tecnologías, por ello, 
+                Microsoft recomienda instalar las nuevas versiones lo antes posible.
+                Uno de los fallos corregidos afecta al algoritmo de descompresión Brotli, utilizado para procesar determinados datos comprimidos. Identificada como CVE-2026-111497, esta vulnerabilidad puede permitir que un atacante sin autenticar lea o modifique la memoria de un proceso, teniendo en cuenta que entre sus posibles consecuencias figuran la exposición de información, la interrupción del funcionamiento de un servicio y la obtención de privilegios elevados.
+                </p>
+            </section>
+            <section>
+                <h4>¿Qué recomienda Microsoft?</h4>
+                <p>Microsoft detalla varios pasos para instalar las correcciones de seguridad en función de cómo se ejecuten o distribuyan las aplicaciones:
+                </p>
+                <ul>
+                    <li>Aplicaciones que utilizan el entorno de ejecución instalado en el sistema</li>
+                    <li>Aplicaciones autónomas</li>
+                    <li>Aplicaciones en contenedores</li>
+                    <li>Entornos que compilan .NET desde el código fuente</li>
+                    <li>Usuarios de ASP.NET Core en .NET 8 y .NET 9 que utilizan archivos TAR</li>
+                </ul>
+                <a href="https://www.microsoft.com/es-ec" target="_blank"><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Icon-Bounce-Premium-Left:VP5-800x450?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=85&fit=constrain" width="300px" alt="En esta imagen podemos apreciar las diferentes aplicaciones de microsoft"></a>
+            </section>
+            <p><a href="https://www.20minutos.es/tecnologia/ciberseguridad/microsoft-lanza-parche-urgente-aplicaciones-servidores-corrige-fallo-brotli_7053808_0.html">Enlace web información</a></p>
+            <form>
+                <fieldset>
+                    <legend>Rellene el formulario</legend>
+                    <label for="nombre-input">Nombre</label>
+                    <input type="text" name="nombre" id="nombre-input">
+                    <br>   
+                    <label for="correo-input">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo-input">
+                    <br>
+                    <label for="textarea">Comentario</label>
+                    <textarea name="textarea" placeholder="Escriba aquí" id="textarea"></textarea>
+                    <br>
+                    <label for="privacidad">Política de privacidad</label>
+                    <input type="checkbox" id="privacidad">
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </article>
+        <article>
+            <h2 id="MN">Artículo sobre el despliegue de un nuevo servicio o migración a la nube</h2>
+            <p>Pavel Despot. Publicado el 13/07/2024, actualizado el 11/04/2025</p>
+            <section>
+                <h3>Estrategia de migración a la nube: el marco de trabajo paso a paso y sus ventajas</h3>
+                <p>Una estrategia de migración a la nube es un plan bien definido que describe los procesos necesarios para que una organización traslade sus datos, aplicaciones e infraestructura de sistemas locales o heredados a un entorno basado en la nube. Aunque algunas organizaciones pueden gestionar su propia nube privada, el enfoque más común es utilizar una nube pública a través de un proveedor.
+                </p>
+            </section>
+            <section>
+                <h4>Ventajas clave de la migración a la nube</h4>
+                <p>En última instancia, una migración a la nube correcta debe dar como resultado una infraestructura de TI escalable, resistente y segura. La infraestructura ideal posterior a la migración es aquella que se pueda adaptar sin problemas a las cambiantes necesidades empresariales, al tiempo que fomenta la innovación y el crecimiento. ¿Cuál es la razón comercial para alcanzar este objetivo final? Las ventajas de la migración a la nube son:
+                </p>
+                <ul>
+                    <li>Ahorros de costes</li>
+                    <li>Rendimiento y disponibilidad</li>
+                    <li>Escalabilidad</li>
+                    <li>Transformación digital</li>
+                    <li>Desarrollo más rápido</li>
+                </ul>
+                <a href="https://www.itmastersmag.com/cloud/cinco-desafios-actuales-de-la-migracion-a-la-nube-y-como-enfrentarlos/" target="_blank"><img src="https://www.itmastersmag.com/wp-content/uploads/2022/07/migracion-a-la-nube.png" width="300px" alt="Esta foto representa de manera virtual, que en la nube llegan diferentes registros"></a>
+            </section>
+            <p><a href="https://www.akamai.com/es/blog/cloud/cloud-migration-strategy">Enlace web información</a></p>
+             <form>
+                <fieldset>
+                    <legend>Rellene el formulario</legend>
+                    <label for="nombre-input">Nombre</label>
+                    <input type="text" name="nombre" id="nombre-input">
+                    <br>   
+                    <label for="correo-input">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo-input">
+                    <br>
+                    <label for="textarea">Comentario</label>
+                    <textarea name="textarea" placeholder="Escriba aquí" id="textarea"></textarea>
+                    <br>
+                    <label for="privacidad">Política de privacidad</label>
+                    <input type="checkbox" id="privacidad">
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </article>
+        <article>
+            <h2 id="CS">Tutorial o recomendación sobre buenas prácticas de copias de seguridad</h2>
+            <p>Publicado el 20/12/2024</p>
+            <section>
+                <h3>Copia de seguridad de datos: 10 prácticas que le salvarán la vida</h3>
+                <p>Una mala gestión de las copias de seguridad puede tener consecuencias críticas. Entre errores humanos y ciberataques, las amenazas son omnipresentes. Descubre 10 buenas prácticas esenciales para proteger tus datos y dormir tranquilo por la noche.
+                </p>
+            </section>
+            <section>
+                <h4>Las 10 prácticas esenciales para proteger tus datos:</h4>
+                <ol>
+                    <li>Realice copias de seguridad con regularidad.</li>
+                    <li>Siga la regla 3-2-1</li>
+                    <li>Utilizar la nube</li>
+                    <li>Cifre sus datos confidenciales</li>
+                    <li>Pruebe regularmente sus copias de seguridad</li>
+                    <li>Automatice sus copias de seguridad para no olvidar</li>
+                    <li>Forme a sus empleados</li>
+                    <li>Documente su estrategia de copias de seguridad</li>
+                    <li>Comprobar el cumplimiento de la normativa</li>
+                    <li>Desarrollar y probar un plan de recuperación en caso de catástrofe (DRP)</li>
+                </ol>
+                <a href="https://intertronic.es/actualidad/ciberseguridad-por-que-es-importante/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HjqmM3B8SfcPsQsyeskzSQo4N8jMt4WKYoY7E4lPW1T-AOSM6d5D48NGtCbW9z0yafzKhC-9wODzSxi2re3WH2opwDMi56D6z2DzaQ&s=10" width="300px" alt="Esta imagen representa de manera virtal un candado de seguridad">
+            </section>
+            <p><a href="https://www.orsys.fr/orsys-lemag/es/10-buenas-practicas-para-las-copias-de-seguridad/">Enlace web información</a></p>
+             <form>
+                <fieldset>
+                    <legend>Rellene el formulario</legend>
+                    <label for="nombre-input">Nombre</label>
+                    <input type="text" name="nombre" id="nombre-input">
+                    <br>   
+                    <label for="correo-input">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo-input">
+                    <br>
+                    <label for="textarea">Comentario</label>
+                    <textarea name="textarea" placeholder="Escriba aquí" id="textarea"></textarea>
+                    <br>
+                    <label for="privacidad">Política de privacidad</label>
+                    <input type="checkbox" id="privacidad">
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <aside>
+        <h2>Sobre el equipo de ASIR:</h2>
+        <p>El ciclo de Administración de Sistemas Informáticos en Red (ASIR) forma profesionales especializados en la instalación, configuración y mantenimiento de sistemas y redes.
+        </p>
+        <h3>Algunos recursos oficiales</h3>
+        <ul>
+            <li><a href="https://www.debian.org/index.es.html">Debian</a></li>
+            <li><a href="https://www.redhat.com/es">Red Hat</a></li>
+            <li><a href="https://www.cisco.com/site/es/es/index.html">Cisco</a></li>
+            <li><a href="https://www.microsoft.com/es-es/windows?r=1">Microsoft windows</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p><b>Autor:</b> Saray Marín Guillén - <b>Curso: 1ºASIR</b></p>
+        <p>© 2025 Saray Marin. Todos los derechos reservados.</p>
+        <p><a href="#inicio">Volver arriba</a></p>
+    </footer>
+</body>
+</html>
