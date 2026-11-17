@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo de CSS</title>
+    <style>
+        ul.menu > li{
+            color: red;
+            font-size: 20px;
+        }
+
+        h2 + p{
+            color: green;
+        }
+
+        input[type="text"]{
+            border: 3px solid red;
+        }
+
+        .parrafoverde{
+            color: green;
+        }
+        .parrafoverde:hover{
+            font-weight: bold;
+            font-size: 30px;
+            background-image: url(img/manzana.jpg);
+            background-size: 10%;
+            background-repeat: no-repeat;
+        }
+        .parraforojo{
+            color: red;
+        }
+        p.parraforojo::first-letter{
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #0000ff;
+        }
+        input:focus{
+            border: 5px red dashed;
+        }
+        tr:nth-child(odd){
+            background-color: yellow;
+        }
+
+        .bloque{
+            width: 900px;
+            min-width: 900px;
+            height: 10%;
+            border: 3px solid red;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>Primera opción</li>
+        <ol>
+            <li>Primera subopción de la primera opción</li>
+            <li>Segunda subopción de la primera opción</li>
+        </ol>
+        <li>Segunda opción</li>
+    </ul>
+    <p>Este es mi primer párrafo</p>
+
+    <h2>Esto es un encabezado de segundo nivel</h2> <!--Este es el único que sale en verde-->
+    <p>Este es mi segundo párrafo</p>
+    <p>Mi tercer párrafo</p>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre"/>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" step="5"/>
+        <input type="submit" value="enviar"/>
+    </form>
+
+    <p class="parrafoverde">Hola, esto es una maravilla, no sé como he podido vivir sin CSS</p>
+    <p class="parraforojo">Y ahora sé escribir en rojo</p>
+
+    <table>
+        <tr>
+            <td>primero</td>
+            <td>segundo</td>
+            <td>tercero</td>
+        </tr>
+         <tr>
+            <td>cuarto</td>
+            <td>quinto</td>
+            <td>sexto</td>
+        </tr>
+         <tr>
+            <td>séptimo</td>
+            <td>octavo</td>
+            <td>noveno</td>
+        </tr>
+    </table>
+
+    <div class="bloque">
+        Cualquier cosa 
+        <img src="img/manzana.jpg" style="margin: 0px auto; display: block; width: 100%;">
+    </div>
+</body>
+</html>
