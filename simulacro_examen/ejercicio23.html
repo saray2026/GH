@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Extraordinaria</title>
+
+    <style>
+        body {
+            background-image: url(imagenes/textura_papel.jpg);
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        div {
+            border: 2px solid blue;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: green;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Este es mi examen</h1>
+    <div>
+        <p>
+            <a href="https://www.vedoque.com/">
+                Esta es una buena página
+            </a>
+        </p>
+    </div>
+    <figure>
+        <img src="imagenes/paisaje.jpg" height="100" alt="Paisaje">
+        <figcaption>Esta es una gran imagen.</figcaption>
+    </figure>
+    <h2>El examen está siendo fácil</h2>
+    <p>No esperaba que fuera tan fácil</p>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Lucía</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <h2>Formulario</h2>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+
+        <p>Selecciona tu ciclo:</p>
+        <select name="ciclo">
+            <option value="asir">ASIR</option>
+            <option value="dam">DAM</option>
+            <option value="daw">DAW</option>
+        </select>
+        <p>Selecciona tu curso:</p>
+        <input type="radio" name="curso" value="primero"> Primero
+        <input type="radio" name="curso" value="segundo"> Segundo
+        <p>Estudios anteriores:</p>
+        <input type="checkbox" name="bachillerato"> Bachillerato
+        <input type="checkbox" name="smr"> SMR
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+    <footer>
+        <p>Hoy sí que voy a aprobar.</p>
+    </footer>
+
+</body>
+</html>
